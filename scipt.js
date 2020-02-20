@@ -12,6 +12,7 @@ let appData = {
     savings : false
 };
 
+
 console.log (money);
 console.log(time);
 
@@ -20,4 +21,4 @@ console.log("Expenses = " + appData.expenses.a);
 appData.expenses.b = prompt("Во сколько обойдется", 10);
 console.log("Во сколько обойдётся = " + appData.expenses.b);
 
-alert('Бюджет на 1 день = ' + money/30);
+alert('Бюджет на 1 день = ' + money/31);
