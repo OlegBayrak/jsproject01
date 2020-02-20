@@ -1,7 +1,7 @@
 var money,
     time;
 money = prompt("Какой ваш бюджет на месяц", 100);
-time = prompt("Введите дату рождения", "11-08-1995");
+time = prompt("Введите дату в формате YYYY-MM-DD", "YYYY-MM-DD");
 
 let appData = {
     budget: money,
@@ -10,7 +10,7 @@ let appData = {
     optionalExpenses : {},
     income : [],
     savings : false
-}
+};
 
 console.log (money);
 console.log(time);
