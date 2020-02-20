@@ -19,3 +19,5 @@ appData.expenses.a = prompt("Введите обязательную стать�
 console.log("Expenses = " + appData.expenses.a);
 appData.expenses.b = prompt("Во сколько обойдется", 10);
 console.log("Во сколько обойдётся = " + appData.expenses.b);
+
+alert('Бюджет на 1 день = ' + money/30);
