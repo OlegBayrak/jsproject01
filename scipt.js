@@ -14,7 +14,8 @@ let appData = {
 
 console.log (money);
 console.log(time);
-let exp = 0,
-    exp2 = 0;
-appData.expenses.a = prompt("Введите обязательную статью расходов :", 0);
+
+appData.expenses.a = prompt("Введите обязательную статью расходов :", "хлеб");
 console.log("Expenses = " + appData.expenses.a);
+appData.expenses.b = prompt("Во сколько обойдется", 10);
+console.log("Во сколько обойдётся = " + appData.expenses.b);
