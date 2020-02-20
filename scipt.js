@@ -1,7 +1,6 @@
-var money,
-    time;
-money = prompt("Какой ваш бюджет на месяц", 100);
-time = prompt("Введите дату в формате YYYY-MM-DD", "YYYY-MM-DD");
+
+let money = prompt("Какой ваш бюджет на месяц", 100);
+let time = prompt("Введите дату в формате YYYY-MM-DD", "YYYY-MM-DD");
 
 let appData = {
     budget: money,
@@ -11,7 +10,6 @@ let appData = {
     income : [],
     savings : false
 };
-
 
 console.log (money);
 console.log(time);
