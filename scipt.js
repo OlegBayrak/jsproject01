@@ -14,9 +14,14 @@ let appData = {
 console.log (money);
 console.log(time);
 
-appData.expenses.a = prompt("Введите обязательную статью расходов :", "хлеб");
-console.log("Expenses = " + appData.expenses.a);
-appData.expenses.b = prompt("Во сколько обойдется", 10);
-console.log("Во сколько обойдётся = " + appData.expenses.b);
+let a1 = prompt("Введите обязательную статью расходов :", "хлеб");
+    a2 = prompt("Во сколько обойдется", 10);
 
-alert('Бюджет на 1 день = ' + money/31);
+appData.expenses.a1 = a1;
+appData.expenses.a2 = a2;
+
+console.log (appData.expenses.a1);
+console.log(appData.expenses.a2);
+
+
+alert('Бюджет на 1 день = ' + appData.budget/30);
