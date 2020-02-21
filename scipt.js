@@ -14,12 +14,12 @@ let appData = {
 console.log (money);
 console.log(time);
 
-let a1 = prompt("Введите обязательную статью расходов :", "хлеб"),
-    a2 = prompt("Во сколько обойдется", 10);
+/*let a1 = prompt("Введите обязательную статью расходов :", "хлеб"),
+    a2 = prompt("Во сколько обойдется", 10);*/
 
 
-
-for (let i = 0; i < 2; i++){
+// Commented part that was created during the lecture
+/*for (let i = 0; i < 2; i++){
     let a = prompt("Введите обязательную статью расходов :", "хлеб"),
         b = prompt("Во сколько обойдется", 10);
     if(typeof(a)==='String'&& typeof(a) != null && typeof(b)==='String'&& typeof(b) != null 
@@ -31,9 +31,22 @@ for (let i = 0; i < 2; i++){
         //}
     }
        
-}
+}*/
+
+// cycle do while
+let i=0;
+    do {
+        let a = prompt("Введите обязательную статью расходов :", "хлеб"),
+            b = prompt("Во сколько обойдется", 10);
+            i++;
+
+    } while (i<2);
+
+// cycle while do
 
 appData.moneyperday = appData.budget/30;
+
+
 alert("Ежедневный бюджет =" + appData.moneyperday);
 if(appData.moneyperday < 100){
     console.log("Минимальный уровень достатка!")
@@ -41,6 +54,9 @@ if(appData.moneyperday < 100){
     console.log("Средний уровень достатка!");
 } else if (appData.moneyperday > 2000){
     console.log("Высокий уровень достатка!")
-} else {console.log("Произошла ошибка!")}
+} else {console.log("Произошла ошибка!")} 
+
+
+
 
 console.log(appData);
