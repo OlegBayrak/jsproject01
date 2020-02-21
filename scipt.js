@@ -1,5 +1,5 @@
 
-let money = prompt("Какой ваш бюджет на месяц", 100);
+let money = +prompt("Какой ваш бюджет на месяц", 100);
 let time = prompt("Введите дату в формате YYYY-MM-DD", "YYYY-MM-DD");
 
 let appData = {
@@ -26,9 +26,9 @@ for (let i = 0; i < 2; i++){
         && a !='' && b != '' && a.length<50 && b.length<50){ 
             console.log("done");
         appData.expenses[a] = b;
-        else {
+        //else {
             //вернуться к циклу заново
-        }
+        //}
     }
        
 }
@@ -42,3 +42,5 @@ if(appData.moneyperday < 100){
 } else if (appData.moneyperday > 2000){
     console.log("Высокий уровень достатка!")
 } else {console.log("Произошла ошибка!")}
+
+console.log(appData);
