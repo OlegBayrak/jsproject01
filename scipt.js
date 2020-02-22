@@ -34,21 +34,21 @@ console.log(time);
 }*/
 
 // cycle do while
-let i=0;
+/*let i=0;
     do {
         let a = prompt("Введите обязательную статью расходов :", "хлеб"),
             b = prompt("Во сколько обойдется", 10);
             i++;
 
-    } while (i<2);
+    } while (i<2);*/
 
 // cycle while do
 
-/*while (i<2) {
+while (i<2) {
     let a = prompt("Введите обязательную статью расходов :", "хлеб"),
         b = prompt("Во сколько обойдется", 10);
     i++;
-}; */
+} 
 
 
 
@@ -57,12 +57,12 @@ appData.moneyperday = appData.budget/30;
 
 alert("Ежедневный бюджет =" + appData.moneyperday);
 if(appData.moneyperday < 100){
-    console.log("Минимальный уровень достатка!")
+    console.log("Минимальный уровень достатка!");
 } else if (appData.moneyperday > 100 && appData.moneyperday < 2000){
     console.log("Средний уровень достатка!");
 } else if (appData.moneyperday > 2000){
-    console.log("Высокий уровень достатка!")
-} else {console.log("Произошла ошибка!")} 
+    console.log("Высокий уровень достатка!");
+} else {console.log("Произошла ошибка!");} 
 
 
 
