@@ -35,20 +35,20 @@ console.log(time);
 
 // cycle do while
 let i=0;
-  /*  do {
+    do {
         let a = prompt("Введите обязательную статью расходов :", "хлеб"),
             b = prompt("Во сколько обойдется", 10);
             i++;
 
-    } while (i<2);*/
+    } while (i<2);
 
 // cycle while do
 
-while (i<2) {
+/*while (i<2) {
     let a = prompt("Введите обязательную статью расходов :", "хлеб"),
         b = prompt("Во сколько обойдется", 10);
     i++;
-};
+}; */
 
 
 
