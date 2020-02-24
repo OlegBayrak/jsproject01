@@ -1,8 +1,8 @@
 let money, time;
 
 function start(){
-    money = +prompt("Какой ваш бюджет на месяц", 10000);
-    time = prompt("Введите дату в формате YYYY-MM-DD", "1995-11-08");
+    money = +prompt("Какой ваш бюджет на месяц", 32000);
+    time = prompt("Введите дату в формате YYYY-MM-DD", "2020-02-24");
    
     while(isNaN(money) || money =="" || money == null){ //isNan проверерка что цифра
         money = +prompt("Какой ваш бюджет на месяц", '');
@@ -20,7 +20,11 @@ let appData = {
     savings : true
 };
 
-
+function detectDayBudget(){
+    let days = +prompt("Сколько дней в месяце?", 30),
+        dayBudget = (money/30).toFixed(4);
+        alert("Бюджет на день = " + dayBudget);
+}
 
 function ChooseExpenses(){
     for (let i = 0; i < 2; i++){
@@ -38,13 +42,6 @@ function ChooseExpenses(){
 
 ChooseExpenses();
 
-appData.moneyperday = (appData.budget / 30).toFixed() ;
-console.log(typeof(appData.moneyperday));
-
-
-console.log (money);
-console.log(time);
-alert("Ежедневный бюджет =" + appData.moneyperday);
 
 if(appData.moneyperday < 100){
     console.log("Минимальный уровень достатка!");
@@ -54,8 +51,6 @@ if(appData.moneyperday < 100){
     console.log("Высокий уровень достатка!");
 } else {console.log("Произошла ошибка!");}
 
-
-console.log(appData);
 
 function CheckSaving(){
     if (appData.savings == true){
@@ -67,7 +62,13 @@ function CheckSaving(){
     }
 }
 
+console.log(appData);
 CheckSaving();
+detectDayBudget();
+
+
+//appData.moneyperday = (appData.budget / 30).toFixed() ;
+
 
 
 /*let a1 = prompt("Введите обязательную статью расходов :", "хлеб"),
