@@ -17,7 +17,7 @@ let appData = {
     expenses: {},
     optionalExpenses : {},
     income : [],
-    savings : false
+    savings : true
 };
 
 
@@ -55,9 +55,19 @@ if(appData.moneyperday < 100){
 } else {console.log("Произошла ошибка!");}
 
 
-
-
 console.log(appData);
+
+function CheckSaving(){
+    if (appData.savings == true){
+        let save = +prompt("Какова сумма накоплений?"),
+            percent = +prompt("Под какой процент?");
+    }
+
+    appData.monthIncome = save/100/12*percent;
+    alert("Доход в месяц с вашего депозита = " + appData.monthIncome);
+}
+
+CheckSaving();
 
 
 /*let a1 = prompt("Введите обязательную статью расходов :", "хлеб"),
