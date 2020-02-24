@@ -1,14 +1,5 @@
 let money, time;
 
-let appData = {
-    budget: money,
-    timeData: time,
-    expenses: {},
-    optionalExpenses : {},
-    income : [],
-    savings : false
-};
-
 function start(){
     money = +prompt("Какой ваш бюджет на месяц", 10000);
     time = prompt("Введите дату в формате YYYY-MM-DD", "1995-11-08");
@@ -19,6 +10,17 @@ function start(){
 }
 
 start();
+
+let appData = {
+    budget: money,
+    timeData: time,
+    expenses: {},
+    optionalExpenses : {},
+    income : [],
+    savings : false
+};
+
+
 
 function ChooseExpenses(){
     for (let i = 0; i < 2; i++){
@@ -36,7 +38,7 @@ function ChooseExpenses(){
 
 ChooseExpenses();
 
-appData.moneyperday = appData.budget / 30 ;
+appData.moneyperday = (appData.budget / 30).toFixed() ;
 console.log(typeof(appData.moneyperday));
 
 
