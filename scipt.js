@@ -61,10 +61,10 @@ function CheckSaving(){
     if (appData.savings == true){
         let save = +prompt("Какова сумма накоплений?"),
             percent = +prompt("Под какой процент?");
-    }
-
+    
     appData.monthIncome = save/100/12*percent;
-    alert("Доход в месяц с вашего депозита = " + appData.monthIncome);
+    alert("Доход в месяц с вашего депозита = " + (appData.monthIncome).toFixed(4));
+    }
 }
 
 CheckSaving();
