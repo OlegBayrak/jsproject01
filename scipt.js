@@ -53,6 +53,14 @@ function CheckSaving(){
     }
 }
 
+/*function chooseOptExpenses(){
+    for (i=0; i<3; i++) {
+        let exp1 = prompt("Введите статью дополнительного дохода :", "каша"),
+    }
+    
+}*/
+
+
 console.log(appData);
 CheckSaving();
 daybudg = detectDayBudget();
