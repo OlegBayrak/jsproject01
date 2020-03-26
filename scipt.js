@@ -17,7 +17,19 @@ let appData = {
     expenses: {},
     optionalExpenses : {},
     income : [],
-    savings : true
+    savings : true,
+    ChooseExpenses: function(){
+        for (let i = 0; i < 2; i++){
+            let a = prompt("Введите обязательную статью расходов :", 'Iphone12'),
+                b = +prompt("Во сколько обойдется", 1000);
+    
+            if( (typeof(a)) === 'string' && (typeof(a)) != null && (typeof(b)) != null && a !='' && b != '' && a.length<50/* && b.length<50*/)
+                { 
+                    console.log("done");
+                    appData.expenses[a] = b;
+                } else {i = i - 1; console.log('WRONG DATA!!!!!');}
+            }
+    }
 };
 
 function detectDayBudget(){
