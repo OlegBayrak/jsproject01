@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let money, time;
 
 function start(){
@@ -69,3 +70,7 @@ let appData = {
 
 
 
+=======
+console.log('Hello, console!');
+console.log('Lets check connection to GIT!');
+>>>>>>> f58264e5fa5e07a56e5046e03c98411fa646dd2b
