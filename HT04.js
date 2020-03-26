@@ -67,7 +67,7 @@ let appData = {
     },
     
     appData.income.forEach (function (itemmassive, i) {
-        alert("LOL: " + (i+1) + " - " + itemmassive);
+        alert("Способы заработка: " + (i+1) + " - " + itemmassive);
     })
 
 
@@ -75,7 +75,7 @@ let appData = {
 };
 
 for (let key in appData) {
-console.log("KEK: " + key + " - " + appData[key]);
+console.log("Наша программа включает в себя данные: " + key + " - " + appData[key]);
 }
 
 
