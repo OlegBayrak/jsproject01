@@ -61,17 +61,22 @@ let appData = {
     },
     chooseIncome: function(){
         let items = prompt('Что принесёт дополнительных доход? (перечислить через запятую','');
-        appData.income = items.split(', ');
-        appData.income.push(prompt('Может что-то ещё?'));
-        appData.income.sort();
-    },
+        if (typeof(items) != "string" || items == "" || typeof(items) == null) {
+            console.log("Что-то пошло не так!!!!!!");
+        } else {
+            appData.income = items.split(", ");
+            appData.income.push(prompt("ÐœÐ¾Ð¶ÐµÑ‚ Ñ‡Ñ‚Ð¾-Ñ‚Ð¾ ÐµÑ‰Ðµ?"));
+            appData.income.sort();
+        }
+
     
     appData.income.forEach (function (itemmassive, i) {
         alert("Способы заработка: " + (i+1) + " - " + itemmassive);
-    })
+    });
 
 
 
+}
 };
 
 for (let key in appData) {
