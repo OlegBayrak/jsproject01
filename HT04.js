@@ -64,8 +64,20 @@ let appData = {
         appData.income = items.split(', ');
         appData.income.push(prompt('Может что-то ещё?'));
         appData.income.sort();
-    }
+    },
+    
+    appData.income.forEach (function (itemmassive, i) {
+        alert("LOL: " + (i+1) + " - " + itemmassive);
+    })
+
+
+
 };
+
+for (let key in appData) {
+console.log("KEK: " + key + " - " + appData[key]);
+}
+
 
 
 
